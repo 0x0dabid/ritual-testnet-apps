@@ -1,0 +1,236 @@
+const apps = [
+  {
+    name: "Ritual Pump",
+    url: "https://ritual-token-launch--rizkyalvonzo8.replit.app/",
+    tag: "Launch",
+    function: "Token launch experiment for Ritual Testnet projects.",
+  },
+  {
+    name: "Ritual Testnet Card",
+    url: "https://ritual-onchain-id.vercel.app/",
+    tag: "Identity",
+    function: "Create a visual testnet identity card.",
+  },
+  {
+    name: "Mint Your X Profile",
+    url: "https://web-3-profile-mint--rolex972306.replit.app/",
+    tag: "Profile",
+    function: "Profile-themed testnet identity experience.",
+  },
+  {
+    name: "Ritual Address Analyzer",
+    url: "https://ritual-stats-check.vercel.app/",
+    tag: "Analytics",
+    function: "Inspect and summarize Ritual testnet address activity.",
+  },
+  {
+    name: "On-chain identity",
+    url: "https://ritual-names.vercel.app/",
+    tag: "Identity",
+    function: "Name and identity utility for testnet users.",
+  },
+  {
+    name: "Autonomous trading agent",
+    url: "https://haezl-trading.info/#dashboard",
+    tag: "Agent",
+    function: "Agent dashboard focused on autonomous trading experiments.",
+  },
+  {
+    name: "GM Stike every 24 Hours",
+    url: "https://gritual-striker.vercel.app/",
+    tag: "Social",
+    function: "Daily GM streak app for Ritual community activity.",
+  },
+  {
+    name: "NFT MarketPlace",
+    url: "https://ritual-searcher--tanjir9721.replit.app/",
+    tag: "NFT",
+    function: "NFT marketplace experiment built for the testnet.",
+  },
+  {
+    name: "RitualDex",
+    url: "https://ritual-perp-dex.replit.app/",
+    tag: "DeFi",
+    function: "Decentralized exchange and perpetuals-style testnet app.",
+  },
+  {
+    name: "Ritual Casino",
+    url: "https://ritualcasino.lovable.app/",
+    tag: "Game",
+    function: "Casino-style game experience for testnet exploration.",
+  },
+  {
+    name: "Prediction Market",
+    url: "https://oracle-predict-market--cahyaeth.replit.app/",
+    tag: "Market",
+    function: "Oracle-powered prediction market experiment.",
+  },
+  {
+    name: "Ritual Hub",
+    url: "https://ritual-testnet-hub.vercel.app/",
+    tag: "Directory",
+    function: "Hub for discovering Ritual Testnet resources.",
+  },
+  {
+    name: "Generate your Ritual Bounty Card",
+    url: "https://wanted-on-ritual.replit.app/",
+    tag: "Community",
+    function: "Community bounty card generator.",
+  },
+  {
+    name: "Ritual Recogniser",
+    url: "https://ritual-recognition.lovable.app/",
+    tag: "Recognition",
+    function: "Recognition-focused community app.",
+  },
+  {
+    name: "Ritual Builder Proof",
+    url: "https://ritual-builder-proof.pages.dev/",
+    tag: "Builder",
+    function: "Builder proof and participation showcase.",
+  },
+  {
+    name: "Ritual Tamagotchi",
+    url: "https://ritual-tamagotchi.vercel.app/",
+    tag: "Game",
+    function: "Playful testnet companion game.",
+  },
+  {
+    name: "Ritual Contract Create",
+    url: "https://ritual-create-contract.vercel.app/",
+    tag: "Developer",
+    function: "Developer utility for contract creation flows.",
+  },
+  {
+    name: "Ritual Mission Console",
+    url: "https://ritual-console.netlify.app/",
+    tag: "Missions",
+    function: "Mission console for testnet tasks and progress.",
+  },
+  {
+    name: "Jumping Siggy",
+    url: "https://jumping-siggy-the-pussy.vercel.app/",
+    tag: "Game",
+    function: "Arcade-style Ritual community game.",
+  },
+  {
+    name: "Ritual Community Map",
+    url: "https://ritual-foundation--tanjir097211.replit.app/",
+    tag: "Community",
+    function: "Community map and ecosystem explorer.",
+  },
+  {
+    name: "Prediction Market",
+    url: "https://ramavenom.github.io/rekt-or-rich/",
+    tag: "Market",
+    function: "Prediction market game for testnet learning.",
+  },
+];
+
+const filters = [
+  "All",
+  "Identity",
+  "Game",
+  "DeFi",
+  "Market",
+  "Agent",
+  "Community",
+  "Developer",
+  "Analytics",
+  "NFT",
+];
+
+const appGrid = document.querySelector("#appGrid");
+const appCount = document.querySelector("#appCount");
+const heroCount = document.querySelector("#heroCount");
+const searchInput = document.querySelector("#searchInput");
+const filterPills = document.querySelector("#filterPills");
+const emptyState = document.querySelector("#emptyState");
+
+let activeFilter = "All";
+
+function getDomain(url) {
+  return new URL(url).hostname.replace(/^www\./, "");
+}
+
+function externalIcon() {
+  return `
+    <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M14 4h6v6h-2V7.41l-8.3 8.3-1.4-1.42 8.29-8.29H14V4ZM5 6h6v2H7v9h9v-4h2v6H5V6Z" />
+    </svg>
+  `;
+}
+
+function renderFilters() {
+  filterPills.innerHTML = filters
+    .map(
+      (filter) => `
+        <button
+          class="filter-pill ${filter === activeFilter ? "is-active" : ""}"
+          type="button"
+          data-filter="${filter}"
+          aria-pressed="${filter === activeFilter}"
+        >
+          ${filter}
+        </button>
+      `,
+    )
+    .join("");
+}
+
+function appMatchesFilter(app) {
+  if (activeFilter === "All") return true;
+  return app.tag === activeFilter;
+}
+
+function appMatchesSearch(app, searchTerm) {
+  const searchableText = `${app.name} ${app.function} ${app.tag} ${getDomain(app.url)}`.toLowerCase();
+  return searchableText.includes(searchTerm);
+}
+
+function renderApps() {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  const visibleApps = apps.filter((app) => appMatchesFilter(app) && appMatchesSearch(app, searchTerm));
+
+  appGrid.innerHTML = visibleApps
+    .map(
+      (app) => `
+        <article class="app-card">
+          <div class="card-top">
+            <span class="tag">${app.tag}</span>
+          </div>
+          <h3>${app.name}</h3>
+          <p>${app.function}</p>
+          <span class="domain">${getDomain(app.url)}</span>
+          <a
+            class="button button-primary card-button"
+            href="${app.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open ${app.name} in a new tab"
+          >
+            Open App ${externalIcon()}
+          </a>
+        </article>
+      `,
+    )
+    .join("");
+
+  appCount.textContent = `${visibleApps.length} ${visibleApps.length === 1 ? "app" : "apps"} listed`;
+  heroCount.textContent = apps.length;
+  emptyState.hidden = visibleApps.length > 0;
+}
+
+filterPills.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-filter]");
+  if (!button) return;
+
+  activeFilter = button.dataset.filter;
+  renderFilters();
+  renderApps();
+});
+
+searchInput.addEventListener("input", renderApps);
+
+renderFilters();
+renderApps();

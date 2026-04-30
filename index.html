@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A curated directory of community-built apps, experiments, and utilities across the Ritual Testnet ecosystem."
+    />
+    <title>Ritual Testnet Apps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#directory">Skip to app directory</a>
+
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="#" aria-label="Ritual Testnet Apps home">
+          <span class="brand-logo-wrap" aria-hidden="true">
+            <img class="brand-logo" src="./background logo.png" alt="" />
+          </span>
+          <span>
+            <span class="brand-title">Ritual Testnet Apps</span>
+            <span class="brand-subtitle">Community directory</span>
+          </span>
+        </a>
+        <div class="top-notice">
+          Testnet only. These apps use testnet tokens and have no real-world monetary value.
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Ritual Testnet Apps</p>
+            <h1>Explore Ritual Testnet Apps</h1>
+            <p class="hero-text">
+              A curated directory of apps, tools, experiments, and community projects built around
+              Ritual Testnet.
+            </p>
+            <div class="hero-actions" aria-label="Hero actions">
+              <a class="button button-primary" href="#directory">Browse Apps</a>
+              <a class="text-link" href="#disclaimer">Testnet disclaimer</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Directory summary">
+            <div>
+              <span class="stat-value" id="heroCount">21</span>
+              <span class="stat-label">apps listed</span>
+            </div>
+            <div class="panel-line"></div>
+            <p>
+              Browse identity tools, games, markets, developer utilities, and community experiments
+              in one link-only directory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-tight" id="disclaimer">
+        <div class="container">
+          <div class="disclaimer-box">
+            <span class="notice-kicker">Testnet Notice</span>
+            <p>
+              This website lists Ritual Testnet apps for exploration and learning purposes only.
+              Testnet tokens are not real assets, have no real-world monetary value, and may be reset
+              or changed at any time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="directory">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Directory</p>
+              <h2>Browse community apps</h2>
+            </div>
+            <p class="app-count" id="appCount" aria-live="polite">21 apps listed</p>
+          </div>
+
+          <div class="toolbar" aria-label="Filter apps">
+            <label class="search-field">
+              <span class="visually-hidden">Search apps</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M10.75 4.5a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5Zm0 1.7a4.55 4.55 0 1 0 0 9.1 4.55 4.55 0 0 0 0-9.1Zm5.42 9.02 3.36 3.36-1.2 1.2-3.36-3.36 1.2-1.2Z"
+                />
+              </svg>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search by name, function, or tag"
+                autocomplete="off"
+              />
+            </label>
+
+            <div class="filter-pills" id="filterPills" aria-label="Category filters"></div>
+          </div>
+
+          <div class="app-grid" id="appGrid"></div>
+          <p class="empty-state" id="emptyState" hidden>No apps match this search.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>Independent community directory for Ritual Testnet apps.</p>
+        <p>Testnet only. No real value. Always verify links before interacting with any app.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
