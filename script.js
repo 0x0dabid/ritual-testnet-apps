@@ -175,7 +175,7 @@ const apps = [
   },
   {
     name: "Ritual Bubble Shooter",
-    url: "https://ritual-bubble-shooter-it.lovable.app/",
+    url: "https://ritual-bubble-shooter-jt.lovable.app/",
     tag: "Game",
     function: "Bubble shooter arcade game on the Ritual Testnet.",
   },
