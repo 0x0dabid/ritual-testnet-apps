@@ -125,6 +125,66 @@ const apps = [
     tag: "Market",
     function: "Prediction market game for testnet learning.",
   },
+  {
+    name: "Ritual Memory Vault",
+    url: "https://ritual-memory-vault.replit.app/",
+    tag: "Storage",
+    function: "Memory vault for storing and retrieving testnet data.",
+  },
+  {
+    name: "Ritual Testnet Explorer",
+    url: "https://ritual-testnet-apps.vercel.app/",
+    tag: "Directory",
+    function: "Explorer and directory for Ritual Testnet apps.",
+  },
+  {
+    name: "Ritual Micro Tap",
+    url: "https://ritual-micro-tap.vercel.app/",
+    tag: "Game",
+    function: "Micro tap game built on the Ritual Testnet.",
+  },
+  {
+    name: "Wallet Analytics",
+    url: "https://ritual-score-checker--0xrumora.replit.app/",
+    tag: "Analytics",
+    function: "Score checker and wallet analytics for testnet addresses.",
+  },
+  {
+    name: "Community Faucet",
+    url: "https://ritual-faucet-blueprint--ritualcommunity.replit.app/",
+    tag: "Community",
+    function: "Community-built faucet blueprint for Ritual Testnet tokens.",
+  },
+  {
+    name: "Siggy Power Card",
+    url: "https://siggy-power-cards.vercel.app/",
+    tag: "Community",
+    function: "Generate and collect power cards featuring Siggy.",
+  },
+  {
+    name: "Lucky Arcade Ritual",
+    url: "https://ritual-casino-quest.lovable.app/",
+    tag: "Game",
+    function: "Lucky arcade and casino quest game for the testnet.",
+  },
+  {
+    name: "Ritual Oracle",
+    url: "https://ritual-oracle-two.vercel.app/",
+    tag: "Market",
+    function: "Oracle utility for testnet data and prediction experiments.",
+  },
+  {
+    name: "Ritual Bubble Shooter",
+    url: "https://ritual-bubble-shooter-it.lovable.app/",
+    tag: "Game",
+    function: "Bubble shooter arcade game on the Ritual Testnet.",
+  },
+  {
+    name: "Siggy Pixelverse",
+    url: "https://siggy-pixelverse.lovable.app/",
+    tag: "Game",
+    function: "Pixel-art universe featuring Siggy and the Ritual ecosystem.",
+  },
 ];
 
 const filters = [
@@ -138,6 +198,7 @@ const filters = [
   "Developer",
   "Analytics",
   "NFT",
+  "Storage",
 ];
 
 const appGrid = document.querySelector("#appGrid");
