@@ -13,7 +13,7 @@ const apps = [
   },
   {
     name: "Mint Your X Profile",
-    url: "https://web-3-profile-mint--rolex972306.replit.app/",
+    url: "https://web-3-profile-mint--rolex9723060.replit.app/",
     tag: "Profile",
     function: "Profile-themed testnet identity experience.",
   },
@@ -36,7 +36,7 @@ const apps = [
     function: "Agent dashboard focused on autonomous trading experiments.",
   },
   {
-    name: "GM Stike every 24 Hours",
+    name: "GM Strike every 24 Hours",
     url: "https://gritual-striker.vercel.app/",
     tag: "Social",
     function: "Daily GM streak app for Ritual community activity.",
@@ -115,7 +115,7 @@ const apps = [
   },
   {
     name: "Ritual Community Map",
-    url: "https://ritual-foundation--tanjir097211.replit.app/",
+    url: "https://ritual-foundation--tanjiro97211.replit.app/",
     tag: "Community",
     function: "Community map and ecosystem explorer.",
   },
@@ -184,6 +184,36 @@ const apps = [
     url: "https://siggy-pixelverse.lovable.app/",
     tag: "Game",
     function: "Pixel-art universe featuring Siggy and the Ritual ecosystem.",
+  },
+  {
+    name: "Ritual Arena",
+    url: "https://ritualarena1.vercel.app/",
+    tag: "Game",
+    function: "Arena-style competitive game on the Ritual Testnet.",
+  },
+  {
+    name: "Diabetes Diary TG Bot",
+    url: "https://t.me/DiaRoutine_Bot",
+    tag: "Community",
+    function: "Telegram bot for health tracking integrated with Ritual Testnet.",
+  },
+  {
+    name: "Ritual Discord Tracker NFT Mint",
+    url: "https://www.ritcord.xyz/",
+    tag: "NFT",
+    function: "Track Discord activity and mint NFTs on Ritual Testnet.",
+  },
+  {
+    name: "Siggy Ritualizer",
+    url: "https://siggy-ritualizer.vercel.app/",
+    tag: "Community",
+    function: "Transform your content into Ritual-themed creations featuring Siggy.",
+  },
+  {
+    name: "Ritual Coin Flip",
+    url: "https://ritual-flip.vercel.app/",
+    tag: "Game",
+    function: "Coin flip prediction game on the Ritual Testnet.",
   },
 ];
 
