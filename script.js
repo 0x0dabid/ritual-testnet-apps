@@ -215,6 +215,108 @@ const apps = [
     tag: "Game",
     function: "Coin flip prediction game on the Ritual Testnet.",
   },
+  {
+    name: "Siggys Virtual Arcade",
+    url: "https://siggy-arcade.vercel.app/",
+    tag: "Game",
+    function: "Virtual arcade featuring Siggy on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Genesis NFT Mint",
+    url: "https://metrix-genesis-mint.lovable.app/",
+    tag: "NFT",
+    function: "Mint genesis NFTs on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Identity Generator",
+    url: "https://ritual-card-pfp-generator.vercel.app/",
+    tag: "Identity",
+    function: "Generate a custom Ritual identity card and profile picture.",
+  },
+  {
+    name: "Ritual Staking",
+    url: "https://ritual-lst.vercel.app/",
+    tag: "DeFi",
+    function: "Liquid staking experiment on the Ritual Testnet.",
+  },
+  {
+    name: "Siggy Streaks",
+    url: "https://siggystreaks.vercel.app/en",
+    tag: "Social",
+    function: "Track and maintain daily Siggy activity streaks.",
+  },
+  {
+    name: "Guess The Ritualists",
+    url: "https://guess-the-ritualist.vercel.app/",
+    tag: "Game",
+    function: "Guessing game to identify members of the Ritual community.",
+  },
+  {
+    name: "Ritual Paws",
+    url: "https://ritual-paws.vercel.app/",
+    tag: "Game",
+    function: "Pet-themed companion game on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Teacher Hub",
+    url: "https://ritual-teacher-hjb3.vercel.app/academy",
+    tag: "Education",
+    function: "Educational academy hub for learning about Ritual Testnet.",
+  },
+  {
+    name: "RitualPad",
+    url: "https://ritual-rocketpad.vercel.app/",
+    tag: "Launch",
+    function: "Launchpad for new projects on the Ritual Testnet.",
+  },
+  {
+    name: "3D Case Sealer",
+    url: "https://ritual-mystery-box.vercel.app/",
+    tag: "Game",
+    function: "3D mystery box opening experience on the Ritual Testnet.",
+  },
+  {
+    name: "Sky Predict",
+    url: "https://skypredict.app/",
+    tag: "Market",
+    function: "Sky-themed prediction market on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Play Spin",
+    url: "https://ritualplayyy.netlify.app/",
+    tag: "Game",
+    function: "Spin-to-win style game on the Ritual Testnet.",
+  },
+  {
+    name: "Siggy Miner",
+    url: "https://siggy-miner-ritual.vercel.app/",
+    tag: "Game",
+    function: "Mining-themed game featuring Siggy on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Multi Sender",
+    url: "https://ritual-batch-bloom.lovable.app/",
+    tag: "DeFi",
+    function: "Batch token multi-sender utility for the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Fate Engine",
+    url: "https://ritual-fate-engine.netlify.app/",
+    tag: "Game",
+    function: "Fate and randomness engine game on the Ritual Testnet.",
+  },
+  {
+    name: "Risa Finance",
+    url: "https://risa-finance.netlify.app/",
+    tag: "DeFi",
+    function: "DeFi finance experiment built on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Learn",
+    url: "https://ritual-learn.vercel.app/",
+    tag: "Education",
+    function: "Learning platform for Ritual Testnet users and builders.",
+  },
 ];
 
 const filters = [
@@ -229,6 +331,8 @@ const filters = [
   "Analytics",
   "NFT",
   "Storage",
+  "Social",
+  "Education",
 ];
 
 const appGrid = document.querySelector("#appGrid");
