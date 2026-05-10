@@ -1,11 +1,5 @@
 const apps = [
   {
-    name: "Ritual Pump",
-    url: "https://ritual-token-launch--rizkyalvonzo8.replit.app/",
-    tag: "Launch",
-    function: "Token launch experiment for Ritual Testnet projects.",
-  },
-  {
     name: "Ritual Testnet Card",
     url: "https://ritual-onchain-id.vercel.app/",
     tag: "Identity",
@@ -14,7 +8,7 @@ const apps = [
   {
     name: "Mint Your X Profile",
     url: "https://web-3-profile-mint--rolex9723060.replit.app/",
-    tag: "Profile",
+    tag: "Identity",
     function: "Profile-themed testnet identity experience.",
   },
   {
@@ -24,16 +18,10 @@ const apps = [
     function: "Inspect and summarize Ritual testnet address activity.",
   },
   {
-    name: "On-chain identity",
+    name: "Ritual On-chain Identity",
     url: "https://ritual-names.vercel.app/",
     tag: "Identity",
     function: "Name and identity utility for testnet users.",
-  },
-  {
-    name: "Autonomous trading agent",
-    url: "https://haezl-trading.info/#dashboard",
-    tag: "Agent",
-    function: "Agent dashboard focused on autonomous trading experiments.",
   },
   {
     name: "GM Strike every 24 Hours",
@@ -48,28 +36,10 @@ const apps = [
     function: "NFT marketplace experiment built for the testnet.",
   },
   {
-    name: "RitualDex",
-    url: "https://ritual-perp-dex.replit.app/",
-    tag: "DeFi",
-    function: "Decentralized exchange and perpetuals-style testnet app.",
-  },
-  {
-    name: "Ritual Casino",
-    url: "https://ritualcasino.lovable.app/",
+    name: "Siggys Virtual Arcade",
+    url: "https://siggy-arcade.vercel.app/",
     tag: "Game",
-    function: "Casino-style game experience for testnet exploration.",
-  },
-  {
-    name: "Prediction Market",
-    url: "https://oracle-predict-market--cahyaeth.replit.app/",
-    tag: "Market",
-    function: "Oracle-powered prediction market experiment.",
-  },
-  {
-    name: "Ritual Hub",
-    url: "https://ritual-testnet-hub.vercel.app/",
-    tag: "Directory",
-    function: "Hub for discovering Ritual Testnet resources.",
+    function: "Virtual arcade featuring Siggy on the Ritual Testnet.",
   },
   {
     name: "Generate your Ritual Bounty Card",
@@ -78,15 +48,9 @@ const apps = [
     function: "Community bounty card generator.",
   },
   {
-    name: "Ritual Recogniser",
-    url: "https://ritual-recognition.lovable.app/",
-    tag: "Recognition",
-    function: "Recognition-focused community app.",
-  },
-  {
     name: "Ritual Builder Proof",
     url: "https://ritual-builder-proof.pages.dev/",
-    tag: "Builder",
+    tag: "Community",
     function: "Builder proof and participation showcase.",
   },
   {
@@ -96,15 +60,9 @@ const apps = [
     function: "Playful testnet companion game.",
   },
   {
-    name: "Ritual Contract Create",
-    url: "https://ritual-create-contract.vercel.app/",
-    tag: "Developer",
-    function: "Developer utility for contract creation flows.",
-  },
-  {
     name: "Ritual Mission Console",
     url: "https://ritual-console.netlify.app/",
-    tag: "Missions",
+    tag: "Community",
     function: "Mission console for testnet tasks and progress.",
   },
   {
@@ -114,22 +72,10 @@ const apps = [
     function: "Arcade-style Ritual community game.",
   },
   {
-    name: "Ritual Community Map",
-    url: "https://ritual-foundation--tanjiro97211.replit.app/",
-    tag: "Community",
-    function: "Community map and ecosystem explorer.",
-  },
-  {
     name: "Prediction Market",
     url: "https://ramavenom.github.io/rekt-or-rich/",
     tag: "Market",
     function: "Prediction market game for testnet learning.",
-  },
-  {
-    name: "Ritual Memory Vault",
-    url: "https://ritual-memory-vault.replit.app/",
-    tag: "Storage",
-    function: "Memory vault for storing and retrieving testnet data.",
   },
   {
     name: "Ritual Testnet Explorer",
@@ -214,12 +160,6 @@ const apps = [
     url: "https://ritual-flip.vercel.app/",
     tag: "Game",
     function: "Coin flip prediction game on the Ritual Testnet.",
-  },
-  {
-    name: "Siggys Virtual Arcade",
-    url: "https://siggy-arcade.vercel.app/",
-    tag: "Game",
-    function: "Virtual arcade featuring Siggy on the Ritual Testnet.",
   },
   {
     name: "Ritual Genesis NFT Mint",
@@ -325,14 +265,13 @@ const filters = [
   "Game",
   "DeFi",
   "Market",
-  "Agent",
   "Community",
-  "Developer",
   "Analytics",
   "NFT",
-  "Storage",
   "Social",
   "Education",
+  "Launch",
+  "Directory",
 ];
 
 const appGrid = document.querySelector("#appGrid");
