@@ -257,6 +257,36 @@ const apps = [
     tag: "Education",
     function: "Learning platform for Ritual Testnet users and builders.",
   },
+  {
+    name: "Ritual Flip Game",
+    url: "https://ritual-flip-card-game.fun/",
+    tag: "Game",
+    function: "Card flip memory game built on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Survival",
+    url: "https://ritualist-game.vercel.app/",
+    tag: "Game",
+    function: "Survival-style game for Ritual Testnet participants.",
+  },
+  {
+    name: "Ritual Tip Feed",
+    url: "https://ritualtipfeed.lovable.app/",
+    tag: "Social",
+    function: "Community tip feed for sharing Ritual Testnet insights.",
+  },
+  {
+    name: "The Cauldron",
+    url: "https://the-cauldron-iota.vercel.app/",
+    tag: "Community",
+    function: "Community cauldron experience on the Ritual Testnet.",
+  },
+  {
+    name: "Ritual Wall",
+    url: "https://ritual-wall-ai-seesac.lovable.app/",
+    tag: "Community",
+    function: "AI-powered community wall for the Ritual Testnet.",
+  },
 ];
 
 const filters = [
